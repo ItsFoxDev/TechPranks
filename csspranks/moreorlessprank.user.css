@@ -1,0 +1,11 @@
+/* ==UserStyle==
+@name           MoreOrLess Hacks!
+@version        1.1
+@description    Gives you a fake highscore in moreorless.io!
+@updateURL      https://raw.githubusercontent.com/ItsFoxDev/TechPranks/main/csspranks/moreorlessprank.user.css
+@namespace      ItsFoxDev
+==/UserStyle== */
+@-moz-document url-prefix("https://moreorless.io/game/") {
+.d-flex flex-sm-column align-items-sm-end mr-4 mt-4 w-100 #highscore{display: none; content:unset !important}
+#highscore:after {content: ',242,680' !important}
+}
